@@ -1,0 +1,124 @@
+<html>
+	<head> </head>
+
+	<body
+		style="
+			font-family: -apple-system, 'microsoft yahei', sans-serif;
+			font-size: 16px;
+			text-align: center;
+		"
+	>
+		<div
+			class="main-wrapper"
+			style="display: flex; flex-flow: column nowrap; justify-content: center"
+		>
+			<!-- top area start -->
+			<div class="header-wrapper" style="height: 10em; background: #fcc">
+				<div
+					class="avatar"
+					style="
+						background-color: #eee;
+						background-image: url('https://ghproxy.com/https://raw.githubusercontent.com/Chanzhaoyu/chatgpt-web/main/src/assets/avatar.jpg');
+						width: 10em;
+						height: 10em;
+						margin: 5em auto 0;
+						background-size: cover;
+						border-radius: 50%;
+						border: 0.25em solid white;
+					"
+				></div>
+			</div>
+			<div
+				class="article-title"
+				style="
+					margin: 6em auto 0;
+					font-weight: bold;
+					line-height: 2;
+					text-align: center;
+					color: #06f;
+				"
+			>
+				${SITE_TITLE} 账号开通
+			</div>
+			<!-- top area end -->
+
+			<!-- content area start -->
+			<div
+				class="content-wrapper"
+				style="
+					width: 100%;
+					padding: 2em;
+					box-sizing: border-box;
+					overflow: hidden;
+				"
+			>
+				<div
+					class="content gray-box"
+					style="
+						min-height: 8em;
+						background: #8881;
+						border-radius: 2em;
+						margin-top: 2em;
+						padding: 2em;
+						box-sizing: border-box;
+					"
+				>
+					<div style="text-align: center; color: #06f; font-size: 1.5em">
+						感谢您使用 ${SITE_TITLE}， 您的邮箱账号已开通
+					</div>
+
+					<hr style="border: 1px dashed #fcc; margin: 2em 0" />
+
+					<div style="text-align: center">
+						<div>请点击以下按钮进行登陆</div>
+
+						<div
+							style="
+								display: inline-block;
+								height: 3em;
+								line-height: 3em;
+								min-width: 8em;
+								background: #fcc;
+								color: #c33;
+								border-radius: 3em;
+								margin: 2em auto;
+							"
+						>
+							<a
+								target="_blank"
+								style="color: #c33; text-decoration: none; padding: 0 1.5em"
+								href="${SITE_DOMAIN}"
+							>
+								点我登陆
+							</a>
+						</div>
+					</div>
+
+					<hr style="border: 1px dashed #fcc; margin: 2em 0" />
+
+					<div style="color: #888; font-size: 0.8em">
+						<div>或者复制链接，并去浏览器打开</div>
+						<div style="font-family: monospace">
+							<a
+								href="${SITE_DOMAIN}"
+								style="
+									text-decoration: none;
+									color: #888;
+									font-family: monospace;
+								"
+								>${SITE_DOMAIN}</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- content area end -->
+
+			<!-- footer start -->
+			<div class="footer" style="margin: 2rem; color: #999; font-size: 0.8em">
+				此邮件由服务器自动发出，直接回复无效。
+			</div>
+			<!-- footer end -->
+		</div>
+	</body>
+</html>
